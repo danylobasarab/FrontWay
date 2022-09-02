@@ -1,0 +1,25 @@
+HTML  [] - всередині можуть додаватися ключові слова але вони не обов'язкові
+
+1.<p><input checked type="radio" name="beer" value="lager">light beer</p>
+   <p><input type="radio" name="beer" value="dark">dark beer</p>
+
+   <p><input type="radio" name="beer2" value="lager">light beer</p>
+   <p><input type="radio" name="beer2" value="dark">dark beer</p>                                         <input tabindex="1 або 2...(перехід за допомогою tab між елементами)
+   (радіокнопки    checked - одразу значення по замовчуванню      input - ввід даних користувачем)
+   (radio, checkbox(галочки), password, text[placeholder(текст на задньому фоні)][disabled],file ...)
+
+2. <a target="_blank" href="куди показує ссилка">текст ссилки</a> - ссилка
+
+3. <br /> абзац(можна вставляти будь-де у тексті)
+
+4. <form action="адреса сервера(або ставимо заглушку #)" method="метод передачі даних" enctype=""></form> - передача даних
+
+5. <textarea [placeholder="sometext"][disabled]name="someText" [cols="30" rows="10"]></textarea> - для вводу об'ємного тексту
+
+6. <select [multiple]name="colors">
+        <option [selected]value="red">Червоний</option>
+        <option [selected]value="yellow">Жовтий</option>
+        <option [selected]value="green">Зелений</option>
+    </select>
+
+7. <button type="">deliver</button> - кнопка

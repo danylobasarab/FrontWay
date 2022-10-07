@@ -1,0 +1,51 @@
+.pricingsection .text p {
+  color: #6f7cb2;
+}
+
+.pricingsection {
+  padding-left: 6%;
+  background-color: white;
+  padding-bottom: 20%;
+  padding-top: 1%;
+}
+.pricingsection .text {
+  max-width: 50%;
+}
+.pricingsection .pricingsection__columns {
+  display: flex;
+}
+.pricingsection .pricingsection__columns .pricingsection__column-text {
+  padding-right: 10%;
+}
+.pricingsection .pricingsection__columns .pricingsection__column-button {
+  width: 50%;
+}
+.pricingsection .pricingsection__columns .pricingsection__column-button-text {
+  background-color: #111B47;
+  color: white;
+  border-radius: 5%;
+  padding: 2%;
+  padding: 3% 15% 3% 15%;
+}
+
+@media screen and (max-width: 320px) {
+  .pricingsection {
+    width: 200%;
+    top: 0;
+    padding-top: 20%;
+  }
+  .pricingsection .pricingsection__columns {
+    width: 55%;
+    flex-wrap: wrap;
+  }
+  .pricingsection .pricingsection__columns .pricingsection__column-button-text {
+    font-size: larger;
+  }
+}
+@media screen and (min-width: 2560px) {
+  .pricingsection {
+    text-align: left;
+  }
+}
+
+/*# sourceMappingURL=pricing.css.map */

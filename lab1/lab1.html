@@ -3,150 +3,249 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lab1 </title>
-
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap">
+  <link rel="stylesheet" href="/css/heap.css">
 
-  <link rel="stylesheet" href="css/globals.css">
+  <title>My web</title>
 </head>
 
 <body>
-  <header class="the__head">
-    <div class="container header__container">
-      <div class="title">Landie</div>
-      <div class="header__navigation">
-        <ul class="menu">
-          <li class="header__nav-item">
-            <a class="header__nav-link" href="#">Home</a>
-          </li>
-          <li class="header__nav-item">
-            <a class="header__nav-link" href="#">About</a>
-          </li>
-          <li class="header__nav-item">
-            <a class="header__nav-link" href="#">Pricing</a>
-          </li>
+  <div class="wrapper">
+    <nav class="navigation">
+      <div class="landie__div">
+        <h2>Landie</h2>
+      </div>
+      <div class="navigation__burger">
+        <span></span>
+      </div>
+      <div class="ul__container">
+        <ul class="ul__container-ul">
+          <div class="ul__container-ul-li">
+            <li><a href="#">Home</a></li>
+          </div>
+          <div class="ul__container-ul-li">
+            <li><a href="#">About</a></li>
+          </div>
+          <div class="ul__container-ul-li">
+            <li><a href="#">Pricing</a></li>
+          </div>
         </ul>
-        <div class="header__buttons">
-          <button class="learn__more header__btn">Learn more</button>
-          <button class="buy__now header__btn">Buy Now</button>
+      </div>
+      <div class="navigation__buttons">
+        <div class="navigation__buttons-ind">
+          <a href="#"><button class="navigation__buttons-l">Learn more</button></a>
+        </div>
+        <div class="navigation__buttons-ind">
+          <a href="#"><button class="navigation__buttons-b">Buy Now</button></a>
         </div>
       </div>
-    </div>
-    <div class="container hero__container">
-      <div class="hero__inner">
-        <h1 class="heading head__tittle">Introduce Your Product Quickly & Effectively</h1>
-        <p class="paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-          Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
-        </p>
-        <p class="paragraph"> mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat
-          massa quis enim.</p>
-        <div class="hero__container-icon">
-          <div class="icon">
-            <img class="icon__image" src="images1/math.jpg" alt="some icon">
-            <h3 class="icon__title">Title Goes Here</h3>
-            <p class="icon__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
-              dolor. </p>
-          </div>
-          <div class="icon">
-            <img class="icon__image" src="images1/math.jpg" alt="some icon">
-            <h3 class="icon__title">Title Goes Here</h3>
-            <p class="icon__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
-              dolor. </p>
-          </div>
-        </div>
-      </div>
-    </div>
+    </nav>
 
-  </header>
-  <section id="intro" class="intro">
-    <div class="container intro__container">
-      <div class="intro-inner">
-        <h1 class="heading intro__title">Light, Fast & Powerful</h1>
-        <p class="paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-          Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
-        </p>
-        <p class="paragraph"> mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat
-          massa quis enim.</p>
-        <div class="intro__container-icon">
-          <div class="icon">
-            <img class="icon__image" src="images1/math.jpg" alt="some icon">
-            <h3 class="icon__title">Title Goes Here</h3>
-            <p class="icon__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
-              dolor. </p>
-          </div>
-          <div class="icon">
-            <img class="icon__image" src="images1/math.jpg" alt="some icon">
-            <h3 class="icon__title">Title Goes Here</h3>
-            <p class="icon__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
-              dolor. </p>
-          </div>
-        </div>
-      </div>
-      <img class="intro-img" src="images1/big1.jpg">
-    </div>
 
-  </section>
-  <section id="pricing" class="pricing">
-    <div class="container pricing__container">
-      <div class="price__text">
-        <h1 class="heading">A Price To Suit Everyone</h1>
-        <p class="paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
-          ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient
-          montes, nascetur ridiculus</p>
+
+
+
+
+
+    <section class="globalsection">
+      <section class="herosection">
+        <div class="title">
+          <h1 class="title__text">Introduce Your Product Quickly & Effectively</h1>
+        </div>
+        <div class="text">
+          <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+            dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus<br>
+            mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+          </p>
+        </div>
+        <div class="herosection__rows">
+          <div class="herosection__rows-single">
+            <div class="math-image">
+              <img src="/images1/math1.jpg" alt="math-image">
+            </div>
+            <div class="smaller-header">
+              <h3>Title Goes Here</h3>
+            </div>
+            <div class="herosection__rows-text-container">
+              <p class="herosection__rows-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+                ligula eget
+                dolor. </p>
+            </div>
+          </div>
+          <div class="herosection__rows-single">
+            <div class="math-image">
+              <img src="/images1/math1.jpg" alt="math-image">
+            </div>
+            <div class="smaller-header">
+              <h3>Title Goes Here</h3>
+            </div>
+            <div class="herosection__rows-text-container">
+              <p class="herosection__rows-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+                ligula eget
+                dolor. </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mainsection">
+        <div class="mainsection__rows-and-photo">
+          <div class="title">
+            <h1 class="title__text">Light, Fast & Powerful</h1>
+          </div>
+          <div class="text">
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+              dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus<br>
+              mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+            </p>
+          </div>
+          <div class="mainsection__rows">
+            <div class="mainsection__rows-single">
+              <div class="math-image">
+                <img src="/images1/math1.jpg" alt="math-image">
+              </div>
+              <div class="smaller-header">
+                <h3>Title Goes Here</h3>
+              </div>
+              <div class="mainsection__rows-text-container">
+                <p class="mainsection__rows-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                  commodo
+                  ligula eget
+                  dolor. </p>
+              </div>
+            </div>
+            <div class="mainsection__rows-single">
+              <div class="math-image">
+                <img src="/images1/math1.jpg" alt="math-image">
+              </div>
+              <div class="smaller-header">
+                <h3>Title Goes Here</h3>
+              </div>
+              <div class="mainsection__rows-text-container">
+                <p class="mainsection__rows-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                  commodo
+                  ligula eget
+                  dolor. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mainsection__rows-and-photo">
+          <div class="main__image">
+            <img src="/images1/big1.jpg" alt="mainPhoto" class="main__image-photo">
+          </div>
+        </div>
+      </section>
+    </section>
+
+
+
+
+
+    <section class="pricingsection">
+      <div class="pricingsection__text">
+        <div class="title">
+          <h1 class="title__text">A Price To Suit Everyone</h1>
+        </div>
+        <div class="text">
+          <p class="text__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+            dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus </p>
+        </div>
       </div>
-      <div class="price__intro">
-        <div class="price__info">
-          <h1 class="heading price">FREE</h1>
-          <h3 class="price__product-name">UI Kit Demo</h3>
-          <p class="price__product-info">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
-            eget dolor.
-            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,</p>
-          <button class="pricing__button">Purchase Now</button>
+      <div class="pricingsection__columns">
+        <div class="pricingsection__columns-column">
+          <div class="pricingsection__column-title">
+            <h2>FREE</h2>
+          </div>
+          <div class="pricingsection__column-title-smaller">
+            <h3>Ui Kit Demo</h3>
+          </div>
+          <div class="pricingsection__column-text">
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.<br>
+              Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,</p>
+          </div>
+          <div class="pricingsection__column-button">
+            <a href="#"><button class="pricingsection__column-button-text">Purchase Now</button></a>
+          </div>
         </div>
-        <div class="price__info">
-          <h1 class="heading price">$40</h1>
-          <h3 class="price__product-name">Design Kit</h3>
-          <p class="price__product-info">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
-            eget dolor.
-            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,</p>
-          <button class="pricing__button">Purchase Design Kit</button>
+        <div class="pricingsection__columns-column">
+          <div class="pricingsection__column-title">
+            <h2>$40</h2>
+          </div>
+          <div class="pricingsection__column-title-smaller">
+            <h3>Design Kit</h3>
+          </div>
+          <div class="pricingsection__column-text">
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.<br>
+              Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,</p>
+          </div>
+          <div class="pricingsection__column-button">
+            <a href="#"><button class="pricingsection__column-button-text">Purchase Design Kit</button></a>
+          </div>
         </div>
-        <div class="price__info">
-          <h1 class="heading price">$75</h1>
-          <h3 class="price__product-name">Design & Code Package</h3>
-          <p class="price__product-info">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula
-            eget dolor.
-            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,</p>
-          <button class="pricing__button">Purchase Package</button>
+        <div class="pricingsection__columns-column">
+          <div class="pricingsection__column-title">
+            <h2>$75</h2>
+          </div>
+          <div class="pricingsection__column-title-smaller">
+            <h3>Design & Code Package</h3>
+          </div>
+          <div class="pricingsection__column-text">
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.<br>
+              Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,</p>
+          </div>
+          <div class="pricingsection__column-button">
+            <a href="#"><button class="pricingsection__column-button-text">Purchase Package</button></a>
+          </div>
         </div>
       </div>
+    </section>
+
+
+
+    <footer class="footer">
+      <div class="footer__cap">
+        <div class="footer__paragraph">
+          <p>©2020 LPNU</p>
+        </div>
+        <div class="footer__title">
+          <h2>Landie</h2>
+        </div>
+      </div>
+      <div class="footer__button">
+        <a href="#"><button class="footer__button-text">IoT edition</button></a>
+      </div>
+      <div class="footer__list">
+        <ul class="footer__container-ul">
+          <div class="footer__container-ul-li">
+            <li><a href="#">Home</a></li>
+          </div>
+          <div class="footer__container-ul-li">
+            <li><a href="#">About</a></li>
+          </div>
+          <div class="footer__container-ul-li">
+            <li><a href="#">Contact</a></li>
+          </div>
+        </ul>
+      </div>
+      <div class="footer__images">
+        <div class="footer__images-item"><a href="#"><img src="/images1/facebook.jpg" alt="fc"></a></div>
+        <div class="footer__images-item"><a href="#"><img src="/images1/linkd.jpg" alt="ld"></a></div>
+        <div class="footer__images-item"><a href="#"><img src="/images1/twit.jpg" alt="tw"></a></div>
+        <div class="footer__images-item"><a href="#"><img src="/images1/youtube.jpg" alt="yt"></a></div>
+        <div class="footer__images-item"><a href="#"><img src="/images1/instagram.jpg" alt="in"></a></div>
+      </div>
+    </footer>
+    <div class="square__div">
+      <div class="square"></div>
     </div>
-  </section>
-  <footer class="footer">
-    <div class="container">
-      <div class="classa">
-        <div class="footer__date">©2022 LPNU</div>
-        <div class="title footer__title">Landie</div>
-      </div>
-      <hr class="footer__hr">
-      <div class="footer__btn">
-        <button class="footer__branding-label">IoT edition</button>
-      </div>
-      <ul class="footer__menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Pricing</a></li>
-      </ul>
-      <div class="footer__social">
-        <a href=""><img class="social-image" src="images1/facebook.jpg" alt="fb social icon"></a>
-        <a href=""><img class="social-image" src="images1/linkd.jpg" alt="linkedin social icon"></a>
-        <a href=""> <img class="social-image" src="images1/twit.jpg" alt="tw social icon"></a>
-        <a href=""><img class="social-image" src="images1/youtube.jpg" alt="yt social icon"></a>
-        <a href=""> <img class="social-image" src="images1/instagram.jpg" alt="instagram social icon"></a>
-      </div>
-    </div>
-  </footer>
+  </div>
+
+
+  <script type="text/javascript" src="/script.js/jquery.js"></script>
+  <script src="/script.js/burger.js"></script>
+
 </body>
 
 </html>

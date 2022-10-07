@@ -1,0 +1,64 @@
+.footer {
+  position: relative;
+  padding-left: 6%;
+  padding-right: 5%;
+  background-color: #e7ecff;
+}
+.footer .footer__cap {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.1rem solid #cdd1d4;
+}
+.footer .footer__button {
+  display: flex;
+  justify-content: center;
+  padding: 4% 4% 0 4%;
+  padding-right: 10%;
+}
+.footer .footer__button .footer__button-text {
+  background-color: #111b47;
+  color: white;
+  padding: 0.3rem 100%;
+  border-radius: 5%;
+}
+.footer .footer__container-ul {
+  display: flex;
+  justify-content: center;
+  padding-left: 6.5%;
+}
+.footer .footer__container-ul .footer__container-ul-li {
+  padding-right: 5.5rem;
+}
+.footer .footer__images {
+  display: flex;
+  justify-content: center;
+  padding-left: 1.1rem;
+}
+.footer .footer__images .footer__images-item {
+  padding: 0 1.1%;
+}
+
+@media screen and (max-width: 320px) {
+  .footer {
+    width: 105%;
+    left: -2rem;
+  }
+  .footer__button {
+    padding: 9% 9% 0 9%;
+    width: 75%;
+  }
+  .footer__container-ul {
+    width: 98%;
+  }
+  .footer__container-ul .footer__container-ul-li {
+    font-size: x-large;
+  }
+  .footer__images {
+    width: 110%;
+  }
+  .footer__images .footer__images-item {
+    width: 25%;
+  }
+}
+
+/*# sourceMappingURL=footer.css.map */

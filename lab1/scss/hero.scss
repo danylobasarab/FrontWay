@@ -1,0 +1,110 @@
+%color-paragraph {
+    color: #6f7cb2;
+}
+
+.globalsection {
+    padding-left: 6%;
+    padding-top: 10%;
+    background-image: url(/images1/big2.jpg);
+    background-repeat: no-repeat;
+    background-position: right -85% top 23%;
+    background-color: white;
+    
+    .herosection {
+        .title {
+            max-width: 50%;
+        }
+        .text {
+            max-width: 48%;
+            p {
+                @extend %color-paragraph;
+            }
+        }
+        .herosection__rows {
+            display: flex;
+            max-width: 49%;
+            .herosection__rows-single {
+                max-width: 50%;
+                padding-right: 2%;
+                padding-top: 3%;
+            }
+        }
+    }
+    .mainsection {
+        padding-top: 35%;
+        display: flex;
+        .text {
+            max-width: 86%;
+            p {
+                @extend %color-paragraph;
+            }
+        }
+        .mainsection__rows {
+            display: flex;
+            max-width: 100%;
+            .mainsection__rows-single {
+                max-width: 45%;
+                padding-right: 1%;
+                padding-top: 3%;
+                .mainsection__rows-text-container {
+                    max-width: 90%;
+                }
+            }
+        }
+        .main__image {
+            display: flex;
+            position: relative;
+            top: -30%;
+            justify-content: right;
+            .main__image-photo {
+                max-width: 100%;
+                max-height: 100%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 320px){
+    .globalsection{
+        background-image: none;
+        width: 200%;
+        top: 0;
+        padding-top: 20%;
+        left: -10rem;
+        .mainsection{
+            padding-top: 5%;
+            .text{
+                width: 50%;
+            }
+            .mainsection__rows{
+                width: 57%;
+            }
+            .main__image-photo{
+                display: none;
+            }
+        }
+    }
+}
+@media screen and (min-width: 2560px){
+    *{
+        font-size: xx-large;
+    }
+    .globalsection{
+        text-align:left;
+        padding-left: 6%;
+        background-position: right -11% top 23%;
+        .herosection{
+            height: 200%;
+        }
+        .mainsection{
+            padding-top: 19%;
+            .mainsection__rows-and-photo{
+                width: 100%;
+                //height: 50%;
+            }
+            .main__image-photo{
+                max-width: 100%;
+            }
+            
+        }
+    }
+}

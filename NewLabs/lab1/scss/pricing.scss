@@ -1,0 +1,55 @@
+%color-paragraph {
+    color: #6f7cb2;
+}
+
+$color1: #111B47;
+$color3: white;
+
+.pricingsection{
+    padding-left: 6%;
+    background-color: $color3;
+    padding-bottom: 20%;
+    padding-top: 1%;
+    .text{
+        max-width: 50%;
+        p{
+            @extend %color-paragraph;
+        }
+    }
+    .pricingsection__columns{
+        display: flex;
+        .pricingsection__column-text{
+            padding-right: 10%;
+        }
+        .pricingsection__column-button{
+            width: 50%;
+        }
+        .pricingsection__column-button-text{
+            background-color: $color1;
+            color: $color3;
+            border-radius: 5%;
+            padding: 2%;
+            padding: 3% 15% 3% 15%;
+        }
+    }
+}
+
+@media screen and (max-width: 320px){
+    .pricingsection{
+        width: 200%;
+        top: 0;
+        padding-top: 20%;
+        .pricingsection__columns{
+            width: 55%;
+            flex-wrap: wrap;
+            .pricingsection__column-button-text{
+                font-size: larger;
+            }
+        }
+    }
+}
+@media screen and (min-width: 2560px){
+    .pricingsection{
+        text-align: left;
+    }
+}

@@ -1,0 +1,151 @@
+$color1: #111b47;
+$color2: #ffd166;
+$color3: white;
+$color4: #37447e;
+$footerCapBorder: #cdd1d4;
+
+.navigation {
+    display: flex;
+    padding-left: 6%;
+    background-color: $color3;
+    .landie__div {
+        padding-right: 16%;
+    }
+    .navigation__burger {
+        display: none;
+    }
+}
+.ul__container {
+    display: flex;
+    max-width: 30rem;
+    padding-left: 20%;
+
+    .ul__container-ul {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+
+        .ul__container-ul-li {
+            position: relative;
+            padding-right: 5rem;
+        }
+    }
+}
+
+.navigation__buttons {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: relative;
+    .navigation__buttons-ind {
+        position: relative;
+        padding-right: 5rem;
+        .navigation__buttons-l {
+            background-color: $color1;
+            color: $color3;
+            border-radius: 5%;
+            width: 150%;
+            padding: 10%;
+        }
+        .navigation__buttons-b {
+            background-color: $color2;
+            color: $color1;
+            border-radius: 5%;
+            width: 150%;
+            padding: 10.8% 0.7rem;
+        }
+    }
+}
+@media screen and (max-width: 320px) {
+    .navigation {
+        position: relative;
+        width: 390%;
+        left: -2rem;
+        background-color: $footerCapBorder;
+        z-index: 50;
+        .navigation__buttons {
+            background-color: $footerCapBorder;
+            padding-right: 5%;
+            padding-left: 5%;
+            left: -5%;
+            .navigation__buttons-ind {
+                padding-left: -20%;
+            }
+        }
+        .ul__container {
+            left: -15%;
+            top: 0%;
+            position: absolute;
+            z-index: 0;
+            transition: all 0.5s ease 0s;
+            .ul__container-ul{
+                background-color:#ffd166;
+                padding-right: 0;
+            }
+        }
+        .ul__container.active{
+            top: 200%;
+        }
+        .landie__div {
+            padding-right: 5%;
+        }
+        .navigation__burger {
+            display: block;
+            position: absolute;
+            top: 0.4rem;
+            width: 2%;
+            height: 4.5rem;
+            right: 74%;
+            z-index: 60;
+            span {
+                position: absolute;
+                background-color: $color4;
+                left: 0;
+                width: 100%;
+                height: 0.8rem;
+                top: 1.8rem;
+                transition: all 0.5s ease 0s;
+            }
+        }
+        .navigation__burger::before,
+        .navigation__burger::after {
+            content: "";
+            background-color: $color4;
+            position: absolute;
+            width: 100%;
+            height: 0.8rem;
+            left: 0;
+            transition: all 0.5s ease 0s;
+        }
+
+        .navigation__burger::before {
+            top: 0;
+        }
+        .navigation__burger::after {
+            bottom: 0;
+        }
+
+        .navigation__burger.active::before{
+            transform: rotate(45deg);
+            top: 1.5rem;
+        }
+        .navigation__burger.active{
+            span{
+                transform: scale(0);
+            }
+        }
+        .navigation__burger.active::after {
+            transform: rotate(-45deg);
+            bottom: 2rem;
+          }
+    }
+}
+// @media screen and (max-width: 2560px){
+//     .navigation{
+//         justify-content: space-around;
+//         .ul__container{
+//             width: 300%;
+//         }
+//     }
+// }

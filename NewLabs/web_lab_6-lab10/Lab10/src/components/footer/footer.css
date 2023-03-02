@@ -1,0 +1,14 @@
+.footer-block{
+    height: 70px;
+    background-color: cadetblue;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-item{
+    margin-top: 20px ;
+}
+
+.footer-link{
+    font-size: 25px;
+}

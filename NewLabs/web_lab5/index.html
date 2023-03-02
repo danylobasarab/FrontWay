@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Lab 5</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Jewelry Manager</h1>
+      <nav class="header__nav">
+        <a onclick="setActive('home')">Home</a>
+        <a onclick="setActive('create')">Create</a>
+      </nav>
+      <div class="search_block">
+        <input placeholder="Client name.." id="input_search" />
+        <button
+          type="button"
+          id="search_btn"
+          class="btn_card"
+          style="width: 100px"
+        >
+          Search
+        </button>
+        <button
+          type="button"
+          id="cancel_search_btn"
+          class="cancel-button btn_card_cansel"
+          style="width: 100px"
+        >
+          Cancel
+        </button>
+      </div>
+    </header>
+    <main id="main_page" class="main__container">
+      <div class="main__container manager">
+        <div class="sort-goods">
+          <h3>Sort orders by price</h3>
+          <label class="switch">
+            <input type="checkbox" id="sort_objects" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <div class="count-price">
+          <hr />
+          <div class="block_price">
+            <h3>Price of all orders:</h3>
+            <span>
+              <span id="count_price"></span>
+              <span>$</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="main__container manager-orders">
+        <ul class="orders_list" id="orders_list"></ul>
+      </div>
+    </main>
+    <main id="create_page" class="create__container">
+      <form id="purchaseForm" class="add-form">
+        <h2>Create order for jewelry</h2>
+        <div class="create-block">
+          <label for="nameInput">Item full name</label>
+          <input
+            type="text"
+            placeholder="Client name.."
+            id="nameInput"
+            name="fullName"
+            required
+          />
+          <label for="descriptionTextArea">Description</label>
+          <textarea
+            placeholder="Description.."
+            id="descriptionTextArea"
+            name="description"
+            required
+          ></textarea>
+          <label for="typeInput">Jewelry type:</label>
+          <select id="typeInput" name="type" required>
+            <option value="Ring">Ring</option>
+            <option value="Bracelet">Bracelet</option>
+            <option value="Earrings">Earrings</option>
+            <option value="Diamonds">Diamonds</option>
+          </select>
+          <label for="orderDateInput">Order date:</label>
+          <input type="date" id="orderDateInput" name="date" required />
+          <label for="priceInput">Price:</label>
+          <input
+            placeholder="Price in $"
+            type="number"
+            id="priceInput"
+            name="price"
+            required
+          />
+        </div>
+        <button type="submit" class="btn-download">Add order</button>
+      </form>
+    </main>
+
+    <main id="edit_page" class="edit__container">
+      <form id="editForm" class="add-form">
+        <h2>Edit order for jewelry</h2>
+        <div class="create-block">
+          <label for="nameInput">Item full name</label>
+          <input
+            type="text"
+            placeholder="Client name.."
+            id="nameInput"
+            name="fullName"
+            required
+          />
+          <label for="descriptionTextArea">Description</label>
+          <textarea
+            placeholder="Description.."
+            id="descriptionTextArea"
+            name="description"
+            required
+          ></textarea>
+          <label for="typeInput">Jewelry type:</label>
+          <select id="typeInput" name="type" required>
+            <option value="Ring">Ring</option>
+            <option value="Bracelet">Bracelet</option>
+            <option value="Earrings">Earrings</option>
+            <option value="Diamonds">Diamonds</option>
+          </select>
+          <label for="orderDateInput">Order date:</label>
+          <input type="date" id="orderDateInput" name="date" required />
+          <label for="priceInput">Price:</label>
+          <input
+            placeholder="Price in $"
+            type="number"
+            id="priceInput"
+            name="price"
+            required
+          />
+        </div>
+        <button type="submit" class="btn-download" id="edit_btn">
+          Edit order
+        </button>
+      </form>
+    </main>
+
+    <script src="js/index.js" type="module"></script>
+  </body>
+</html>

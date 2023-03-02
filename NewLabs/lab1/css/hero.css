@@ -1,0 +1,102 @@
+.globalsection .mainsection .text p, .globalsection .herosection .text p {
+  color: #6f7cb2;
+}
+
+.globalsection {
+  padding-left: 6%;
+  padding-top: 10%;
+  background-image: url(/images1/big2.jpg);
+  background-repeat: no-repeat;
+  background-position: right -85% top 23%;
+  background-color: white;
+}
+.globalsection .herosection .title {
+  max-width: 50%;
+}
+.globalsection .herosection .text {
+  max-width: 48%;
+}
+.globalsection .herosection .herosection__rows {
+  display: flex;
+  max-width: 49%;
+}
+.globalsection .herosection .herosection__rows .herosection__rows-single {
+  max-width: 50%;
+  padding-right: 2%;
+  padding-top: 3%;
+}
+.globalsection .mainsection {
+  padding-top: 35%;
+  display: flex;
+}
+.globalsection .mainsection .text {
+  max-width: 86%;
+}
+.globalsection .mainsection .mainsection__rows {
+  display: flex;
+  max-width: 100%;
+}
+.globalsection .mainsection .mainsection__rows .mainsection__rows-single {
+  max-width: 45%;
+  padding-right: 1%;
+  padding-top: 3%;
+}
+.globalsection .mainsection .mainsection__rows .mainsection__rows-single .mainsection__rows-text-container {
+  max-width: 90%;
+}
+.globalsection .mainsection .main__image {
+  display: flex;
+  position: relative;
+  top: -30%;
+  justify-content: right;
+}
+.globalsection .mainsection .main__image .main__image-photo {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+@media screen and (max-width: 320px) {
+  .globalsection {
+    background-image: none;
+    width: 200%;
+    top: 0;
+    padding-top: 20%;
+    left: -10rem;
+  }
+  .globalsection .mainsection {
+    padding-top: 5%;
+  }
+  .globalsection .mainsection .text {
+    width: 50%;
+  }
+  .globalsection .mainsection .mainsection__rows {
+    width: 57%;
+  }
+  .globalsection .mainsection .main__image-photo {
+    display: none;
+  }
+}
+@media screen and (min-width: 2560px) {
+  * {
+    font-size: xx-large;
+  }
+  .globalsection {
+    text-align: left;
+    padding-left: 6%;
+    background-position: right -11% top 23%;
+  }
+  .globalsection .herosection {
+    height: 200%;
+  }
+  .globalsection .mainsection {
+    padding-top: 19%;
+  }
+  .globalsection .mainsection .mainsection__rows-and-photo {
+    width: 100%;
+  }
+  .globalsection .mainsection .main__image-photo {
+    max-width: 100%;
+  }
+}
+
+/*# sourceMappingURL=hero.css.map */

@@ -1,0 +1,42 @@
+.nav-block{
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    background-color: cadetblue;
+    width: 100%;
+    /* position: fixed; */
+}
+
+.img_logo{
+    height: 40px;
+    margin-top: 25px;
+}
+
+.nav-elements{
+    display: flex;
+    height: 50px;
+    font-size: 25px;
+    font-weight: 550;
+    margin-top: 30px;
+} 
+
+.nav-home, .nav-catalog, .nav-card{
+    color: rgb(29, 88, 147);
+}
+
+ul {
+    list-style-type: none;
+}
+
+.nav-elements li{
+    margin-right: 50px;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+a:hover{
+    color: black;
+}
+
